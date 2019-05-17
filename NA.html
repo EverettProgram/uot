@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Test</title>
+</head>
+<body>
+
+	<div id="navBar">
+		<ul>
+			<li><a href="map.html">Map</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		
+	</div>
+
+	<div id="container">
+		<div id="questionNavigation">
+			<div id="previous">
+				<button id="prevButton" onclick="showPrevious()" >Previous</button>
+			</div>
+			<div id="question" class="questions">
+
+				<div id="question1">
+					<h1> 1) Background</h1>
+					<br>
+					<br>
+					<br>
+					<h1>What is the name of your organization</h1>
+					<form>
+						<input id="answer1" type="text" name="answer">
+					</form>
+				</div>
+
+				<div id="question2">
+					<h1>2) What is your organization’s mission statement?</h1>
+					<form>
+						<input id="answer2" type="text" name="answer">
+					</form>
+				</div>
+
+				<div id="question3">
+					<h1> 3) Size & Impact</h1>
+					<br>
+					<br>
+					<br>
+					<h1>How many total Staff and volunteers does your organization have?</h1>
+					<form>
+						<input id="answer3(1)" type="number" min=0 name="answer">
+					</form>
+					<br>
+					<br>
+					<br>
+					<h1>How many people does your organization directly serve?</h1>
+					<form>
+						<input id="answer3(2)" type="number" min=0 name="answer">
+					</form>
+					<br>
+					<br>
+					<br>
+				</div>
+
+				<div id="question4">
+					<h1> 4) Project / Issue</h1>
+					<br>
+					<br>
+					<br>
+					<h1>What is the project or issue your organization is currently facing?</h1>
+					<form id="issueORproject">
+						<input class="check" name="issue" type="radio" value="issue"> Issue<br>
+  						<input class="check" name="issue" type="radio" value="project"> Project<br>
+					</form>
+					<br>
+					<br>
+					<br>
+					<h1>Describe in detail the Issue / Project: </h1>
+					<textarea id="projectDetails" rows="4" cols="50">Tell us about your issue/project here.
+					</textarea>
+					<br>
+					<br>
+					<br>
+				</div>
+				<div id="question5">
+					<h1> 5) What are your core end goals for this issue/project? Make sure that your goals are specific, measurable, achievable, relevant and time-bound.</h1>
+					<input class="multAns" id="answer5(1)" type="text">
+					<input class="multAns" id="answer5(2)" type="text">
+					<input class="multAns" id="answer5(3)" type="text">
+				</div>
+				<div id="question6">
+					<h1> 6) Think about the specific, big picture, steps needed to achieve the goals you listed.  What are your organization’s top priorities for this Issue / Project?</h1>
+					<input class="multAns" id="answer6(1)" type="text">
+					<input class="multAns" id="answer6(2)" type="text">
+					<input class="multAns" id="answer6(3)" type="text">
+				</div>
+				<div id="question7">
+					<h1> 7) How many inexperienced and experienced people (staff and volunteers) does your organization have specifically devoted to handling and implementing technology?</h1><br>
+					<form id="form7">
+						<h3>Inexperienced People:</h3><input id="answer7(iPpl)" type="number" min=0 name="iPplAnswer"><br>
+						<h3>Experienced People:</h3><input id="answer7(ePpl)" type="number" min=0 name="ePplAnswer"><br><br>
+						<textarea id="techCapacityDetails" rows="5" cols="50">Describe the skills, experience, education, and training of staff and volunteers devoted to implementing, maintaining, and updating technology within your organization.
+						</textarea>
+					</form>
+				</div>
+				<div id="question8">
+					<h1> 8) Time Considerations </h1>
+					<form id="form8">
+						<h3>How many people does your organization have working less than Part Time on technology? </h3><input id="answer8(negPT)" type="number" min=0 name="negPTAnswer">
+						<h3>How many people does your organization have working Part Time on technology? </h3><input id="answer8(pt)" type="number" min=0 name="ptAnswer">
+						<h3>How many people does your organization have working Full Time on technology?</h3><input id="answer8(ft)" type="number" min=0 name="ftAnswer">
+					</form>
+				</div>
+				<div id="question9">
+					<h1> 9) Budget Considerations </h1>
+					<form id="form9">
+						<h3> What is your organization’s annual income? </h3>
+						<input id="answer9(budget)" type="number" min=0 name="budgetAnswer"><br>
+  						<h3> What is your organization’s annual budget for technology? </h3>
+						<input id="answer9(techBudget)" type="number" min=0 name="techBudgetAnswer">
+					</form>
+				</div>
+				<div id="question10">
+					<h1> 10) Considering this Issue / Project, what do you need most to accomplish your goals?</h1>
+					<form>
+						<textarea id="techCapacityDetails" rows="5" cols="50">Not Sure what this question is about
+						</textarea>
+					</form>
+				</div>
+
+			</div>
+			<div id="next" onclick="showNext()">
+				<button id="nextButton">Next</button>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id="submitSection">
+			<button id="submitButton" onclick="submit()">Submit</button>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id="answerTest">
+			<h1 id="answers"></h1>
+		</div>
+		<br>
+		<br>
+	</div>
+
+
+	<script src="navigation.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
