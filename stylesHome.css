@@ -1,0 +1,67 @@
+h1.title{
+	font-family: 'Exo', sans-serif;
+	font-style: 'Light';
+}
+
+
+#title{
+	color: white;
+}
+#description{
+	font-style: italic;
+	color: white;
+}
+
+#home{
+	background: url(images/homespace.png) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+.landing-text{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+#about{
+	float: left;
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 3.4em;
+	padding-right: 7.0em;
+	padding-bottom: 7.4em;
+}
+#uotConcept{
+	float: left;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 50%;
+	padding-top: 7.4em;
+	padding-bottom: 7.4em;
+}
+#spaceJourney{
+	padding-right: 7.0em;
+	padding-left: 7.0em;
+	float: left;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border-style: dashed;
+}
+div.images{
+	padding-top: 7.4em;
+	float: left;
+	text-align: center;
+	width: 33.33%;
+}

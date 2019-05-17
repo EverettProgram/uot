@@ -1,0 +1,60 @@
+#previous{
+	float: left;
+	width: 33.33%;
+
+
+}
+#next{
+	float: left;
+	width: 33.33%;
+	
+}
+div{
+	text-align: center;
+}
+div.questions{
+	float: left;
+	width: 33.33%;
+}
+h1{
+	color: black;
+}
+div.multAns{
+	text-align: center;
+}
+#question1{
+	display: block;
+}
+#question2{
+	display: none;
+}
+#question3{
+	display: none;
+}
+#question4{
+	display: none;
+}
+#question5{
+	display: none;
+}
+#question6{
+	display: none;
+}
+#question7{
+	display: none;
+}
+#question8{
+	display: none;
+}
+#question9{
+	display: none;
+}
+#question10{
+	display: none;
+}
+
+#submitButton{
+	display: none;
+	display: center
+}
+	
