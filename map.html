@@ -8,15 +8,18 @@
 	<title>Test</title>
 </head>
 <body>
-
-	<div id="navBar">
-		<ul>
-			<li><a href="map.html">Map</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-		
-	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  	</button>
+	  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	   		<div class="navbar-nav">
+		    <a class="nav-item nav-link active" href="map.html">Map <span class="sr-only">(current)</span></a>
+		    <a class="nav-item nav-link" href="about.html">About</a>
+		    <a class="nav-item nav-link" href="contact.html">Contact</a>
+	    	</div>
+	  	</div>
+	</nav>
 
 	<div id="container">
 		<iframe height="600" width="700" scrolling="no" style="border: 0px; overflow: hidden;" src="https://littlesis.org/maps/4063-uot/embedded/v2"></iframe>
