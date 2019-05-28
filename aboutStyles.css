@@ -1,0 +1,35 @@
+#meetCrew{
+	text-align: center;
+}
+
+div.leftMember{
+	float: left;
+	padding-left: 61px;
+	padding-bottom: 61px;
+	
+}
+
+img {
+	float: left;
+}
+h2.name{
+	
+}
+p.title{
+
+}
+
+div.rightMember{
+	float: right;
+	padding-right:  61px;
+}
+
+img {
+	float: left;
+}
+h2.name{
+	
+}
+p.title{
+
+}
