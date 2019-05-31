@@ -1,4 +1,13 @@
-	
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos < currentScrollPos) {
+    document.getElementById("arrowDiv").style.display="none";
+  } 
+  prevScrollpos = currentScrollPos;
+}
+
 var currentQuestion=document.getElementById("question1");
 
 function showNext() {
