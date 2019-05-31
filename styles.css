@@ -1,8 +1,10 @@
+h1, h2, h3, p, button{
+	font-family: 'Exo', sans-serif;
+}
+
 #previous{
 	float: left;
 	width: 33.33%;
-
-
 }
 #next{
 	float: left;
@@ -16,9 +18,7 @@ div.questions{
 	float: left;
 	width: 33.33%;
 }
-h1{
-	color: black;
-}
+
 div.multAns{
 	text-align: center;
 }
