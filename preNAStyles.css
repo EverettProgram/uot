@@ -1,0 +1,24 @@
+div{
+	text-align: center;
+}
+h1, p, h3, h2, button{
+	font-family: 'roboto', sans-serif;
+}
+#beforeNA{
+	padding: 2em;
+}
+
+#explanationBox{
+	background: rgba(196, 196, 196, 0.6);
+	padding: 2em;
+}
+
+input{
+	background-color: #466EAA;
+	color: white;
+	border-radius: 8px;
+	height: 89px;
+	left: 456px;
+	right: 456px;
+	bottom: 114px;
+}
