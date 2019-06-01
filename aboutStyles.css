@@ -1,14 +1,16 @@
 h1, p, h3, h2, button{
 	font-family: 'Exo', sans-serif;
+	color: white;
 }
 #meetCrew{
 	text-align: center;
 }
 
+#container{
+	background-image: linear-gradient(to right top, #2b323d, #564560, #935369, #bf6d57, #c29c43);
+}
 div.leftMember{
-	float: left;
-	padding-left: 61px;
-	padding-bottom: 61px;
+	padding: 4em;
 	
 }
 
@@ -23,8 +25,7 @@ p.title{
 }
 
 div.rightMember{
-	float: right;
-	padding-right:  61px;
+	padding: 4em;
 }
 
 img {
