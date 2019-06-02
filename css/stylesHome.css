@@ -77,7 +77,7 @@ html, body{
 	vertical-align: middle;
 }
 #yourSpaceJourney{
-	background: url(images/homespace.png) no-repeat center center fixed;
+	background: url(../images/homespace.png) no-repeat center center fixed;
 	height: 70%;
 	width: 100%;
 	background-size: cover;
