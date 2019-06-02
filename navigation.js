@@ -11,20 +11,19 @@ window.onscroll = function() {
 var currentQuestion=document.getElementById("question1");
 
 function showNext() {
-	if(currentQuestion==document.getElementById("question10")){ //don't allow going next q from q10
-		document.getElementById("question10").style.display="block";
-	}
-	else{
-		var nextQuestion = currentQuestion.nextElementSibling;
-	  	var submitButton = document.getElementById("submitButton");
-	  	currentQuestion.style.display = "none";
-	  	nextQuestion.style.display = "block";
-	  	currentQuestion=nextQuestion;
-	  	if(currentQuestion==document.getElementById("question10")){
-	  		submitButton.style.display="block"
-	  	}
-	}
-}
+    if(currentQuestion==document.getElementById("question15")){ //don't allow going next q from q15
+        document.getElementById("question15").style.display="block";
+    }
+    else{
+        var nextQuestion = currentQuestion.nextElementSibling;
+          var submitButton = document.getElementById("submitButton");
+          currentQuestion.style.display = "none";
+          nextQuestion.style.display = "block";
+          currentQuestion=nextQuestion;
+          if(currentQuestion==document.getElementById("question15")){
+              submitButton.style.display="block"
+          }
+    }
 
 function showPrevious() {
 	if(currentQuestion==document.getElementById("question1")){ //don't allow going prev q from q1
