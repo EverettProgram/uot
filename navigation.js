@@ -148,3 +148,10 @@ function submit(){
 		}
 	}
 }
+
+function sendMessage(){
+	var name=document.getElementById("name").value;
+	var phoneNumber=document.getElementById("phone").value;
+	var email=document.getElementById("email").value;
+	var message=document.getElementById("message").value;
+}

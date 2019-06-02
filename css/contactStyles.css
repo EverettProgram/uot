@@ -1,6 +1,40 @@
 h1, h2, h3, p, button, form, input{
 	font-family: 'Exo', sans-serif;
+	
+}
+input{
+
+}
+input.button{
+	background-color: blue;
 }
 div{
 	text-align: center;
+}
+
+form{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+#container{
+	background-image: linear-gradient(to right top, #6c8ec2, #7076a5, #6d6087, #634b69, #55394d);
+	display: table;
+	position: relative;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+
+img{
+
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
 }

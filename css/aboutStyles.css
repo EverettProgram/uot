@@ -6,6 +6,8 @@ h1, p, h3, h2, button{
 	text-align: center;
 }
 
+
+
 #container{
 	background-image: linear-gradient(to right top, #2b323d, #564560, #935369, #bf6d57, #c29c43);
 }
