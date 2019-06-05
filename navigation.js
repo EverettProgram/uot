@@ -1,21 +1,30 @@
 var currentQuestion=document.getElementById("question1");
 
 function showNext() {
-
-    if(currentQuestion==document.getElementById("question15")){ //don't allow going next q from q15
-        document.getElementById("question15").style.display="block";
-    }
+	//if on the last question, submit (@Yesenia code will go here for making it submit the forms)
+	if(currentQuestion==document.getElementById("question15")){
+		alert("Finished with needs assessment");
+	}
+	//show next question if not at the end
     else{
     	var nextQuestion = currentQuestion.nextElementSibling;
-        var submitButton = document.getElementById("submitButton");
         currentQuestion.style.display = "none";
         nextQuestion.style.display = "block";
         currentQuestion=nextQuestion;
-        if(currentQuestion==document.getElementById("question15")){
-            submitButton.style.display="block"
-        }
     }
+    //next button becomes finish button
+    if(currentQuestion==document.getElementById("question15")){
+		var nextButton=document.getElementById("nextButton");
+		nextButton.innerHTML=("Finish");
+	}
+
+	//make sure the previous button will show if not on the first question
+	var prevButton=document.getElementById("prevButton");
+	prevButton.style.visibility="visible";
 }
+
+
+
 
 function showPrevious() {
 	if(currentQuestion==document.getElementById("question1")){ //don't allow going prev q from q1
@@ -27,8 +36,21 @@ function showPrevious() {
 	  	previousQuestion.style.display = "block";
 	  	currentQuestion=previousQuestion;
 	}
+	//hide the next button if on the first question
+	if(currentQuestion==document.getElementById("question1")){
+		var prevButton=document.getElementById("prevButton");
+		prevButton.style.visibility="hidden";
+	}
+	//only have button say finish if on the last question
+	if(currentQuestion!=document.getElementById("question15")){
+		var nextButton=document.getElementById("nextButton");
+		nextButton.innerHTML=("Next");
+	}
+	//make sure the next button will show if not on the final question
+	var nextButton=document.getElementById("nextButton");
+	nextButton.style.visibility="visible";
 }
-
+//make sure only one option checked
 $(document).ready(function(){
     $('.check').click(function() {
         $('.check').not(this).prop('checked', false);
@@ -132,14 +154,17 @@ function submit(){
 		          {index:1, feedback: "You are a medium capacity org."},
 		          {index:2, feedback: "You are a high capacity org."}];
 
-	// display organization's tech. capacity
+	// display organization's tech. capacity 
+	//commenting this out since yesenia will be using forms
 	for(i = 0; i < scores.length; i++) {
 		if(capacityList[i] == maxScore) {
-			document.getElementById("answers").innerHTML = scores[i].feedback;
+			/*document.getElementById("answers").innerHTML = scores[i].feedback;*/
 		}
 	}
 }
 
+
+//code for contact page. if we go with a plugin, delete this
 function sendMessage(){
 	var name=document.getElementById("name").value;
 	var phoneNumber=document.getElementById("phone").value;

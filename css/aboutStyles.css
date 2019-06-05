@@ -1,6 +1,5 @@
 h1, p, h3, h2, button{
 	font-family: 'Exo', sans-serif;
-	color: white;
 }
 #meetCrew{
 	text-align: center;
@@ -13,12 +12,8 @@ h1, p, h3, h2, button{
 }
 div.leftMember{
 	padding: 4em;
-	
 }
 
-img {
-	float: left;
-}
 h2.name{
 	
 }

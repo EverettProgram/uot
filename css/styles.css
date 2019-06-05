@@ -5,6 +5,7 @@ h1, h2, h3, p, button{
 #previous{
 	float: left;
 	width: 33.33%;
+	visibility: hidden;
 }
 #next{
 	float: left;
@@ -67,9 +68,3 @@ div.multAns{
 #question15{
 	display: none;
 }
-
-#submitButton{
-	display: none;
-	display: center
-}
-	
