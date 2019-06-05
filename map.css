@@ -1,0 +1,38 @@
+        .modal-dialog{
+            margin:0;
+            position: fixed;
+            top:0;
+            bottom:0;
+            right:auto;
+            background: #fff;
+            width:60%;
+            overflow-y: auto;
+        }
+        .modal-content{
+            border:none;
+            background: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            border-radius:0;
+        }
+        .fade-scale {
+            transform: scale(1,0); /* scale(0); horizontal*/
+            opacity: 0;
+            -webkit-transition: all .25s linear;
+            -o-transition: all .25s linear;
+            transition: all .25s linear;
+        }
+        
+        /*FOR BOOTSTRAP 3 just chengr class .show to .in*/
+        /*
+        .fade-scale.in {
+            opacity: 1;
+            transform: scale(1,1);
+        }
+        */
+
+        .fade-scale.show {
+            opacity: 1;
+            transform: scale(1,1); /* scale(1); horizontal*/
+        }
