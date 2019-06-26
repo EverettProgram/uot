@@ -19,6 +19,24 @@ button.btn{
 	color: white;
 }
 
+@media only screen and (max-width: 800px) {
+  p,h1, h3 {
+    font-size: 97%;
+  }
+  #spaceJourney, #aboutDiv, #uotConcept, #about{
+  	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+  }
+  #about{
+  	text-align: left;
+  	vertical-align: left;
+  	float: none;
+  	padding: none;
+  }
+}
+
 
 #home{
 	background: url(../images/homespace.png) no-repeat center center fixed;

@@ -14,6 +14,12 @@ div.leftMember{
 	padding: 4em;
 }
 
+@media only screen and (max-width: 800px) {
+  p,h1, h3 {
+    font-size: 99%;
+  }
+}
+
 h2.name{
 	
 }
@@ -33,4 +39,10 @@ h2.name{
 }
 p.title{
 
+}
+
+
+html, body{
+	height: 100%;
+	width: 100%;
 }
